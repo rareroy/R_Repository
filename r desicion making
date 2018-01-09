@@ -1,0 +1,109 @@
+> a = 10
+> b = 20
+> if(a>b){
++ print("a is greater than b")
++ }
+> if(a<b){
++ print("b is greater than a")
++ }
+[1] "b is greater than a"
+> if(a>b){
++ print("a is greater than b")
++ }else{
++ print("b is greater than a")
++ }
+[1] "b is greater than a"
+> if(a>b){
++ print("a is greater than b")
++ }else{
++ print("b is greater than a")
++ }else {
+Error: unexpected 'else' in:
+"print("b is greater than a")
+}else"
+> if(a>b){
++ print("a is greater than b")
++ }else {
++ }
+NULL
+> if(a>b){
++ print("a is greater than b")
++ }else if(b>a){
++ print("b is greater than a")
++ }else{
++ print("b is equal to a")
++ }
+[1] "b is greater than a"
+> switch(3,
++ print("1st"),
++ print("2nd"),
++ print("3rd"),
++ print("4th")
++ )
+[1] "3rd"
+> expr <- 4
+> switch(expr,
++ print("1st"),
++ print("2nd"),
++ print("3rd"),
++ print("4th")
++ )
+[1] "4th"
+> v <- c("hello","repeat")
+> cnt <- 2
+> repeat{
++ print(v)
++ cnt = cnt+1
++ if(cnt>6){
++ break}
++ }
+[1] "hello"  "repeat"
+[1] "hello"  "repeat"
+[1] "hello"  "repeat"
+[1] "hello"  "repeat"
+[1] "hello"  "repeat"
+> print(cnt)
+[1] 7
+> while(cnt<15){
++ print(v)
++ cnt = cnt+1
++ }
+[1] "hello"  "repeat"
+[1] "hello"  "repeat"
+[1] "hello"  "repeat"
+[1] "hello"  "repeat"
+[1] "hello"  "repeat"
+[1] "hello"  "repeat"
+[1] "hello"  "repeat"
+[1] "hello"  "repeat"
+> print(v)
+[1] "hello"  "repeat"
+> for(i in v){
++ print(i)
++ }
+[1] "hello"
+[1] "repeat"
+> v1 <- LETTERS[1:6]
+> print(v1)
+[1] "A" "B" "C" "D" "E" "F"
+> for(i in v1){
++ print(i)
++ }
+[1] "A"
+[1] "B"
+[1] "C"
+[1] "D"
+[1] "E"
+[1] "F"
+> for(i in v1){
++ if(i=="C"){
++ next
++ }
++ print(i)
++ }
+[1] "A"
+[1] "B"
+[1] "D"
+[1] "E"
+[1] "F"
+> 
